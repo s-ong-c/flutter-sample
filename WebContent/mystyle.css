@@ -1,0 +1,95 @@
+        * {
+            box-sizing: border-box;
+        }
+        li {
+            list-style-type: none;  /* 리스트타입의 점을 사라지게함 */
+        }
+        a {
+            text-decoration-line: none; /* a태그의 밑줄을 사라지게함 */
+        }
+        .topMenu{
+            height: 20%;
+            list-style-type: none;  /* 리스트타입의 점을 사라지게함 */
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+        }
+        .topMenu li{
+            border: 1px solid white;
+            float: right; /*작성후에는 꼭 끝내는 것이 있어야한다.overflow:hidden*/          
+            /* display: inline-block; */
+            background-color: black;    
+        }
+        .topMenu li > a { /*li안에 a태그*/
+            text-decoration-line: none; /* a태그의 밑줄을 사라지게함 */
+            text-align: center;
+            display: block;
+            color:  white;
+            
+            width: 50px;
+            height: auto;
+        }
+        .topMenu li > a:hover{ /*마우스오버변하게 하기*/
+            background-color: gray;
+        }
+        .container {            
+            position: relative;
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            /* opacity: 0.3; */
+        }
+        .container .center {
+            
+            font: 100px bold;
+            color: white;
+            position: absolute;
+            top: 20%;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+        .menuBar{
+            
+            bottom: -7%;
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            margin: 0 auto;
+            padding: 0;
+            overflow: hidden;
+        }
+        .menuBar li {
+            float: left;
+            border: 1px solid white;
+            width: 20%;
+            height: 100%;
+            top:0;
+            background-color: black;
+            text-align: center;
+            left:0;
+        }
+        .menuBar li > a {
+            color: white;
+        }
+        .details {
+            position: relative;
+            border: 1px solid red;
+            height: 1000px;
+            background-image: url("image/b0208123_54249608618da.jpg");
+            opacity: 0.7;
+        }
+        footer {
+            position: relative;
+            background-color: black;
+            height: 80px;
+        }
+        footer > p {
+            position: absolute;
+            top: 1%;
+            width: 100%;
+            font: 13px bold;
+            color: white;
+            text-align: center;
+        }
